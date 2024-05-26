@@ -97,7 +97,7 @@ header {
 }
 
 .login-section {
-    padding: 50 px 20bpx;
+    padding: 50 px 20 px;
     background-color: #e1bee7;
     color: #4a148c;
 }
@@ -209,14 +209,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20 px;
+    width:50 px;
 }
 
 input[type="text"] {
-    padding: 10px;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 5px 0 0 5px;
+    padding: 10 px;
+    width: 70 %;
+    border: 1 px solid #ccc;
+    border-radius: 5 px 0 0 5 px;
 }
 
 button {
