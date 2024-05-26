@@ -8,12 +8,12 @@ body {
 
 header {
     background-color: #6200ea;
-    padding: 20px 0;
+    padding: 20 px 0;
     color: #fff;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 24 px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -32,9 +32,9 @@ header {
 .navbar a {
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14 px 20 px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 17 px;
 }
 
 .navbar a:hover {
@@ -42,14 +42,14 @@ header {
     color: black;
 }
 
-@media screen and (max-width: 600px) {
+@ media screen(max-width: 600px) {
     .navbar {
         flex-direction: column;
         align-items: center;
     }
 
     .navbar a {
-        padding: 10px;
+        padding: 10 px;
     }
 }
 
@@ -58,13 +58,19 @@ header {
 }
 
 .carousel-item img {
-    height: 200px;
+    height: 200 px;
 }
-
+.content-container2{color:blue;
+                    font-weight:bold;}
+.photo-container2{width:50 px;
+                  height:50 px;
+                 }
+.photo-container .img{width:50 px;
+                      height:50 px;}
 #join-us {
     display: block;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10 px 20 px;
     background-color: #333;
     color: #fff;
     border: none;
@@ -73,9 +79,9 @@ header {
 
 #join-form {
     display: none;
-    padding: 20px;
+    padding: 20 px;
     background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 1 px solid #ddd;
 }
 
 #join-form form {
@@ -85,24 +91,24 @@ header {
 
 #join-form form input,
 #join-form form button {
-    padding: 10px;
-    margin: 5px 0;
-    font-size: 1em;
+    padding: 10 px;
+    margin: 5 px 0;
+    font-size: 1 em;
 }
 
 .login-section {
-    padding: 50px 20px;
+    padding: 50 px 20bpx;
     background-color: #e1bee7;
     color: #4a148c;
 }
 
 .login-form {
-    max-width: 600px;
+    max-width: 600 px;
     margin: auto;
 }
 
 .login-form .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15 px;
 }
 
 .login-form label {
@@ -110,10 +116,10 @@ header {
 }
 
 .login-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100 %;
+    padding: 10 px;
+    border: 1 px solid #ccc;
+    border-radius: 5 px;
 }
 
 .login-form button {
@@ -334,13 +340,13 @@ button {
     font-size: 1em; /* default font size */
 }
 
-@media (max-width: 768px) {
+@media-screen(max-width: 768 px) {
     .why-text {
         font-size: 0.8em; /* reduce font size for smaller screens */
     }
 }
 
-@media (min-width: 1200px) {
+@media-screen(min-width: 1200 px) {
     .why-text {
         font-size: 1.2em;
     }
