@@ -6,7 +6,7 @@ body {
     color: #333;
 }
 
-header {
+.header {
     background-color: #6200ea;
     padding: 20 px 0;
     color: #fff;
@@ -247,7 +247,7 @@ button {
 }
 
 .nav-item a {
-    color: white;
+    color: purple;
     text-decoration: none;
     font-weight: bold;
 }
