@@ -232,21 +232,21 @@ button {
 
 .nav-menu {
     list-style: inline-block;
-    margin: 0;
+    margin: 20 px;
     padding: 15 px;
     display: flex;
     justify-content: center;
 }
 
 .nav-item {
-    margin: 0 15 px;
+    margin:20 20 px;
 }
 
 .nav-item a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding:15 px;
+    padding:20 px;
 }
 
 .nav-item a:hover {
@@ -299,7 +299,7 @@ button {
 }
 
 .numbertext {
-    color: #f2f2f2;
+    color: white;
     font-size: 12 px;
     padding: 15 px 20 uhpx;
     position: absolute;
