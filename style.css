@@ -30,7 +30,7 @@ body {
 }
 
 .navbar a {
-    color:purple;
+    color:white;
     text-align: center;
     padding: 14 px 20 px;
     text-decoration: none;
@@ -198,10 +198,10 @@ body {
 .title {
     text-transform: uppercase;
     font-weight: bold;
-    margin: 0 20px;
+    margin: 0 20 px;
     text-align: center;
     flex-grow: 1;
-    font-size: 20px;
+    font-size: 20 px;
     color: blue;
 }
 
@@ -221,17 +221,17 @@ input[type="text"] {
 }
 
 button {
-    padding: 10px 15px;
+    padding: 10 px 15 px;
     background-color: #333;
     color: white;
     border: none;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 5 px 5 px 0;
     cursor: pointer;
 }
 
 .nav-bar {
     background-color: blue;
-    padding: 10px 0;
+    padding: 10 px 0;
 }
 
 .nav-menu {
@@ -243,11 +243,11 @@ button {
 }
 
 .nav-item {
-    margin: 0 15px;
+    margin: 0 15 px;
 }
 
 .nav-item a {
-    color: purple;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
