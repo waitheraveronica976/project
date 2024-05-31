@@ -37,10 +37,6 @@ body {
     font-size: 17 px;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 @ media screen(max-width: 600px) {
     .navbar {
@@ -235,7 +231,7 @@ button {
 }
 
 .nav-menu {
-    list-style: none;
+    list-style: inline-block;
     margin: 0;
     padding: 0;
     display: flex;
