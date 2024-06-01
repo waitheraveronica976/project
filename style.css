@@ -32,7 +32,7 @@
 .navbar a {
     color:white;
     text-align: center;
-    padding: 14 px 20 px;
+    padding: 20 px 20 px;
     text-decoration: none;
     font-size: 16 px;
 }
@@ -45,7 +45,7 @@
     }
 
     .navbar a {
-        padding: 10 px;
+        padding: 20 px;
     }
 }
 
@@ -166,7 +166,7 @@
     margin: 5 px 0;
 }
 
-@media (max-width: 768 px) {
+@media-screen (max-width: 768 px) {
     .navbar {
         display: none;
     }
@@ -227,19 +227,19 @@ button {
 
 .nav-bar {
     background-color: blue;
-    padding: 15 px 20  px;
+    padding: 20 px 20 px;
 }
 
 .nav-menu {
     list-style: inline-block;
     margin: 20 px;
-    padding: 15 px;
+    padding: 20 px;
     display: flex;
     justify-content: center;
 }
 
 .nav-item {
-    margin:20 20 px;
+    margin:20 px 20 px;
 }
 
 .nav-item a {
@@ -291,7 +291,7 @@ button {
 .text {
     color: black;
     font-size: 15 px;
-    padding: 8 px 12 px;
+    padding: 20 px 20 px;
     position: absolute;
     bottom: 8 px;
     width: 100 %;
