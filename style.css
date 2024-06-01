@@ -26,7 +26,7 @@
     background-color:#444;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navbar a {
@@ -235,12 +235,12 @@ button {
     margin: 20 px;
     padding: 20 px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-item {
     margin:20 px 20 px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-item a {
@@ -248,7 +248,7 @@ button {
     text-decoration: none;
     font-weight: bold;
     padding:20 px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav-item a:hover {
