@@ -83,6 +83,11 @@ body {
 .title {
     font-size: 24px;
 }
+.h1{color:purple;
+    font-weight:bold;
+   }
+.h2{color: purple;
+    font-weight:bold;}
 
 .nav-bar ul {
     list-style: none;
