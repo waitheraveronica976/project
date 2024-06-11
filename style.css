@@ -297,12 +297,9 @@ button#next-btn {
     width: 50%;
     height: auto;
 }
-.image-container{widht:25px;
-                 height:25px;}
 
-body {
-    font-family: Arial, sans-serif;
-}
+
+
 
 footer {
     background-color: #f4f4f4;
@@ -343,7 +340,7 @@ footer {
     gap: 15px;
 }
 
-.social img {width:15px
+.social-icon {width:15px;
     height:15:px;
     
 }
