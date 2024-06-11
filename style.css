@@ -297,6 +297,8 @@ button#next-btn {
     width: 50%;
     height: auto;
 }
+.image-container{widht:25px;
+                 height:25px;}
 
 body {
     font-family: Arial, sans-serif;
