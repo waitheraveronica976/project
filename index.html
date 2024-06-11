@@ -1,241 +1,244 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-      <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Iyf digital learning</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-  
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IYF Digital Learning Platform</title>
+    <link rel="stylesheet" href="style.css.2.css">
 </head>
-  <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"><span class="text-warning">Iyf</span>digital learning</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-  <a class="nav-link" href="#home" onclick="smoothScroll('home')">Home</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#about" onclick="smoothScroll('about')">About</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#service" onclick="smoothScroll('service')">Services</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#portfolio" onclick="smoothScroll('portfolio')">Portfolio</a>
-</li>
-<li class="nav-item">
-  <a class="nav-link" href="#contact" onclick="smoothScroll('contact')">Contact Us</a>
-</li>
-          <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<body>
+ 
+    <nav>
+      <div class="navbar">
+    <div class="upper-section">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="logo">
+            smart learning
+        </div>
+        <div class="login-button">
+            Login
+            <img src="https://via.placeholder.com/30" alt="Profile">
+        </div>
     </div>
-  </div>
-  </nav>
-
-       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="2000">
-
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <img src="H1.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Best Liquor Store</h5>
-        <p>follow your dream by joining iyf !</p>
-        <button type="button" class="btn btn-warning">Learn More</button>
-      </div>
+    <div class="lower-section">
+        <div class="nav-item" onclick="toggleMenu(this)">
+            courses
+            <ul>
+                <li>computer </li>
+                <li>fashion </li>
+                <li>engineering</li>
+                <li>languages</li>
+            </ul>
+        </div>
+        <div class="nav-item" onclick="toggleMenu(this)">
+            team
+            <ul>
+                <li>teachers</li>
+                <li>students</li>
+                <li>missionaries</li>
+                <li>non-staff</li>
+            </ul>
+        </div>
+        <div class="nav-item" onclick="toggleMenu(this)">
+            prizes
+            <ul>
+                <li>reg-500</li>
+                <li>classes-free</li>
+                <li>graduation-1000</li>
+                <li>camp-500</li>
+            </ul>
+        </div>
+        <div class="nav-item" onclick="toggleMenu(this)">
+            program
+            <ul>
+                <li>chapel-class</li>
+                <li>weekend classes</li>
+                <li>mid-term exams</li>
+                <li>end-term exams</li>
+            </ul>
+        </div>
+        <div class="nav-item" onclick="toggleMenu(this)">
+           fun
+            <ul>
+                <li>camping</li>
+                <li>interaction </li>
+                <li>after-parties</li>
+                <li>presentation</li>
+            </ul>
+        </div>
     </div>
-    <div class="carousel-item">
-      <img src="h7.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Cool drinks</h5>
-        <p>join our team and get the best free education</p>
-        <button type="button" class="btn btn-warning">Learn More</button>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="h5.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Enroll today for season 6</h5>
-        <p>Get the best outcome out of a perfect learning experience</p>
-        <button type="button" class="btn btn-warning">Learn More</button>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-
-      <div style="overflow: hidden;">
-  <marquee behavior="scroll" direction="left">
-    <span style="font-size: 20px; color: red;">Welcome to Iyf digital learning- Discover a world of fine learning experience !</span>
-  </marquee>
-</div>
-
-    
-
-
-    
-    <section class="courses-section">
-        <h2>Courses We Offer</h2>
-        <div class="courses">
-            <div class="course">
-                <img src="w4.jpeg"class="img-thumbnail"alt="Mind education"> 
-       <h2>Mind Education</h2>
-            <p></p>The Mind Education Project, which teaches Kenyan youth and youth leaders about the world of hearts, self-control, bright and radiant mind, ultimately giving them wings of hope, expanded its door overseas through the various IYF forums </div>    
-        </p><div class="course">             
-              <img src="w9.jpeg"class="img-thumbnail"alt="computer programming"> 
-       <h4>computer programming</h4>
-            <p>Programmers typically use high-level programming languages that are more easily intelligible to humans than machine code, which is directly executed by the central processing unit.   </div>    
-        </p> <div class="course">
-                <img src="w6.jpeg"class="img-thumbnail"alt="computer packages"> 
-        <h3>Computer packages</h3>
-            <p>Computer Packages program is a comprehensive training program designed to provide individuals with the essential skills and knowledge required to effectively utilize computer applications and packages.    </div>    
-        </p> <div class="course">
-                <img src="w9.jpeg"class="img-thumbnail"  <h5>UI/UX</h5>
-            <p>You will learn the principles of designing digital products such as mobile apps, websites, or software, that are not only visually appealing but also highly functional and user-friendly.   </div> 
-        </p> </div>
+    <section class="hero">
+        <img src="hero.jpg">
+        <div class="hero-overlay">
+            <p>Learning with Excellence</p>
+            <button>Get Started</button>
+        </div>
     </section>
-    
+
   
-        
-        <div class="overlay"
-            <img src="w8.jpeg"class="img-fluid">
-            <h2>TEAM</h2>
-            <p>Meet our global staff of passionate and experienced youth development professionals. With diverse backgrounds and talents, we're all dedicated to transforming lives, together.</p>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="wpg.1" >
+                <div class="caption">comp- programming</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.2">
+                <div class="caption">comp-packages</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.3">
+                <div class="caption">engineering</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.4">
+                <div class="caption">mind-education</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.5">
+                <div class="caption">Graphic design</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.6" >
+                <div class="caption">sign-language</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.7">
+                <div class="caption">fashion&design</div>
+            </div>
+            <div class="carousel-item">
+                <img src="wpg.8">
+                <div class="caption">languages</div>
+            </div>
         </div>
+        <button id="prev-btn" class="carousel-btn prev">&#10094;</button>
+        <button id="next-btn" class="carousel-btn next">&#10095;</button>
     </div>
+
     
-    <h1>More Courses</h1>
-    <div class="container">
-        <div class="course">
-<img src="w5.jpeg"class="img-thumbnail" alt="fashion and design">
-<h2>Fashion and design</h2>
-        <p>Fashion design is the art of applying design, aesthetics, clothing construction and natural beauty to clothing and its accessories      </div>
-    </p> <div class="course"> 
-           <img src="w2.jpeg"class="img-thumbnail" alt="Paramedics">
-     <h2>Paramedics</h2>
-            <p>Working as a paramedic is an exciting and rewarding career path. Learn more about the role of a paramedic, what training and education are necessary to start a paramedic career, and more with this comprehensive guide to a career as a paramedic. </div>  
-    </p> <div class="course">
-            <img src="w5.jpeg"class="img-thumbnail"alt="Graphic Design">
-    <h3>Graphics design</h3>
-            <p>Graphic design is an interdisciplinary branch of design[1] and of the fine arts. Its practice involves creativity, innovation and lateral thinking using manual or digital tools, where it is usual to use text and graphics to communicate visually.  </div>    
-    </p>  <div class="course">
-            <img src="w7.jpeg"class="img-thumbnail"alt="Sign Language"> 
-      <h5>Sign Language</h4>
-            <p>Sign Language Interpretation course prepares students to communicate with and interpret for persons who are deaf or hard of hearing. </div>  
-    </p> </div>
-    
-    <button id="join-us">Join Us</button>
-    
-    <section id="join-form">
-        <h2>Join Us</h2>
-        <form>
-            <input type="text" name="name" placeholder="Name">
-            <input type="text" name="course" placeholder="Course to Enroll">
-            <input type="email" name="email" placeholder="Email">
-            <input type="tel" name="contact" placeholder="Contact">
-            <button type="submit">Submit</button>
-        </form>
+
+    <section class="feature">
+        <img src="feature.jpg">
+        <div class="feature-overlay">
+            <p>Quality and Affordable Learning</p>
+            <button>Explore Services</button>
+        </div>
     </section>
+  <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="png.1">
+                <div class="caption">100%free</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.2">
+                <div class="caption">join-us</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.3">
+                <div class="caption">get-lessons</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.4">
+                <div class="caption">a better future</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.5">
+                <div class="caption">bible-teachings</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.6" >
+                <div class="caption">get-better</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.7">
+                <div class="caption">tell a friend</div>
+            </div>
+            <div class="carousel-item">
+                <img src="png.8">
+                <div class="caption">build a better world</div>
+            </div>
+        </div>
+         <button id="prev-btn" class="carousel-btn prev">&#10094;</button>
+        <button id="next-btn" class="carousel-btn next">&#10095;</button>
+    </div>
+
     
-    <div class="content-container">
-        <div class="content">
-            <h5>Why Online Learning</h5>
+
+  
+
+  
+
+    <section class="about">
+        <div class="about-text">
+            <h2>Welcome to IYF Digital Learning Platform</h2>
             <p>Given that IYF is not allocated in all areas in Kenya, online learning will be a great alternative for those who cannot access the institution geographically. Also, IYF has high demand, thus unable to accommodate all interested individuals for the program. IYF online learning offers flexibility for students to learn at their own pace and schedule, making it easier for those with other commitments or those who cannot attend traditional school hours. It is also more cost-effective by reducing the need for physical infrastructure and transportation, making it a viable option for both the educational institutions and students.</p>
+            <button>Learn More</button>
         </div>
-        <div class="content-container2">
-              <p>New here?✓✓Join us,Already a member?✓✓Login</p> >
+        <img src="about.jpg">
+    </section>
+
+    <div class="container">
+        <h1 class="heading">JOIN US TODAY</h1>
+        <div class="image-row">
+            <div class="image-container">
+                <img src="jpg.1">
+                <div class="overlay-text">instagram</div>
+            </div>
+            <div class="image-container">
+                <img src="jpg.2">
+                <div class="overlay-text">facebook</div>
+            </div>
+            <div class="image-container">
+                <img src="jpg.3">
+                <div class="overlay-text">Twitter</div>
+            </div>
+            <div class="image-container">
+                <img src="jpg.4">
+                <div class="overlay-text">Youtube</div>
+            </div>
         </div>
     </div>
-    
-    <div class="image-container2">
-        <img src="w1.jpeg"class="img-thumbnail">
-        <img src="w2.jpeg" class="img-thumbnail">
-        <img src="w3.jpeg"class="img-thumbnail">
-        <img src="w4.jpeg"class="img-thumbnail">
-    </div>
-    
-    <section class="login-section">
-        <h6>Login</h6>
-        <form class="login-form">
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="course">Course</label>
-                <input type="text" id="course" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="contact">Contact</label>
-                <input type="text" id="contact" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="search">Search</label>
-                <input type="text" id="search" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </section>
-    
-    <section class="footer">
-        <div class="contact-section">
-            <div class="contact-info">
-                <h2>For Inquiries</h2>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h4>Contact</h4>
                 <ul>
-                    <li><i class="fas fa-phone"></i> Contact: +123456789</li>
-                    <li><i class="fas fa-envelope"></i> Email: example@example.com</li>
-                    <li><i class="fab fa-whatsapp"></i> WhatsApp: +123456789</li>
+                    <li>Email:@iyf.com</li>
+                    <li>+123 456 7890</li>
+                    <li>IG :@iyf</li>
+                    <li>Twitter:@iyf</li>
                 </ul>
             </div>
-            <div class="website-info">
-                <h8>Visit Our Website</h8>
-                <p>IYF was established as a worldwide youth organization and international NGO based on Christian mindset in 2001, to raise leaders with a global insight through youth education, activities, and provide realistic solutions to problems in the global village. Visit our website to learn for free!</p>
+            <div class="footer-item">
+                <h4>Location</h4>
+                <p>Kasarani<br>Nairobi,Kenya</p>
             </div>
-            <div class="social-media">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
+          
+            <div class="footer-item">
+                <h4>Social Media</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-logo.png" class="social-logo"></a>
+                    <a href="#"><img src="instagram-logo.png"  class="social-logo"></a>
+                    <a href="#"><img src="twitter-logo.png" class="social-logo"></a>
+                    <a href="#"><img src="linkedin-logo.png"  class="social-logo"></a>
+                </div>
             </div>
         </div>
-        <footer class="bg-light text-center py-3">
-            <p>&copy; 2024 Veronica Waithera</p>
-        </footer>
-    </section>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </footer>
+</body>
+</html>
+
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 @ All rights reserved. Veronica Waithera</p>
+        </div>
+    </footer>
+
+    <script src="script.js.1.js"></script>
 </body>
 </html>
