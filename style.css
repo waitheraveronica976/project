@@ -343,9 +343,9 @@ footer {
     gap: 15px;
 }
 
-.social-icon {
-    color: blueviolet;
-    text-decoration: none;
+.social img {width:15px
+    height:15:px;
+    
 }
 
 .social-icon:hover {
