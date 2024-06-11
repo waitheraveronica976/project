@@ -1,27 +1,52 @@
+function toggleMenu(element) {
+        const ul = element.querySelector('ul');
+        ul.style.display = ul.style.display === 'block' ? 'none' : 'block';
+    }
+let index = 0;
 
-document.addEventListener('DOMContentLoaded', function () {
-    const joinUsButton = document.getElementById('join-us');
-    const joinForm = document.getElementById('join-form');
+function showSlide(n) {
+    const slides = document.querySelectorAll('.carousel img');
+    const totalSlides = slides.length;
+    const maxIndex = totalSlides - 4; // We always want to show 4 images at a time
+    
+    if (n > maxIndex) {
+        index = maxIndex;
+    } else if (n < 0) {
+        index = 0;
+    } else {
+        index = n;
+    }
+    
+    const offset = -index * 25; // Each image takes up 25% of the width
+    document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+}
 
-    joinUsButton.addEventListener('click', function () {
-        joinForm.style.display = 'block';
-    });
+function nextSlide() {
+    showSlide(index + 1);
+}
 
-    joinForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const name = joinForm.querySelector('input[name="name"]').value;
-        const course = joinForm.querySelector('input[name="course"]').value;
-        const email = joinForm.querySelector('input[name="email"]').value;
-        const contact = joinForm.querySelector('input[name="contact"]').value;
+function prevSlide() {
+    showSlide(index - 1);
+}
 
-        if (name && course && email && contact) {
-            alert('Thank you for joining us!');
-            joinForm.reset();
-            joinForm.style.display = 'none';
-        } else {
-            alert('Please fill in all fields.');
-        }
-    });
+// Add swipe functionality
+let startX = 0;
+document.querySelector('.carousel').addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
 });
 
+document.querySelector('.carousel').addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) {
+        nextSlide();
+    } else if (startX - endX < -50) {
+        prevSlide();
+    }
+});
 
+// Initialize the carousel to show the first 4 images
+showSlide(0);
+
+// Add event listeners for buttons
+document.getElementById('next-btn').addEventListener('click', nextSlide);
+document.getElementById('prev-btn').addEventListener('click', prevSlide);
