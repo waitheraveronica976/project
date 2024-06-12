@@ -1,9 +1,53 @@
-body {
+.body{
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    box-sizing: border-box;
 }
+
+
+
+
+/* Carousel styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px; /* Add some padding */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center; /* Center the carousel items */
+    gap: 20px; /* Add spacing between carousel items */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 25%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px; /* Add rounded corners */
+    overflow: hidden; /* Crop images within the carousel item */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+.carousel img {
+    width: 25px;
+    height: 25px; /* Set a fixed height for consistent image sizes */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
+. overlay text{
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    color: #333; /* Dark text color */
+    padding: 10px;
+}
+
+
+    
  .navbar {
             display: flex;
             flex-direction: column;
